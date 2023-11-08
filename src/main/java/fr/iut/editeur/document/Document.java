@@ -32,9 +32,6 @@ public class Document {
     }
 
     public void majuscule(int start, int end) {
-        String leftPart = texte.substring(0, start);
-        String rightPart = texte.substring(end);
-        String toUpper = texte.substring(start, end).toUpperCase();
-        texte = leftPart + toUpper + rightPart;
+        remplacer(start, end, texte.substring(start, end).toUpperCase());
     }
 }

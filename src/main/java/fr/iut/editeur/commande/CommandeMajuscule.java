@@ -19,6 +19,4 @@ public class CommandeMajuscule extends CommandeDocument{
         super.executer();
     }
 
-
-
 }
