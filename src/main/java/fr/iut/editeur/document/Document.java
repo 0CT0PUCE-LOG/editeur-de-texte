@@ -37,4 +37,8 @@ public class Document {
         String toUpper = texte.substring(start, end).toUpperCase();
         texte = leftPart + toUpper + rightPart;
     }
+
+    public void clear() {
+        texte = "";
+    }
 }
