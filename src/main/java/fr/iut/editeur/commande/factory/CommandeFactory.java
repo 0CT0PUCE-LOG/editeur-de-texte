@@ -18,8 +18,14 @@ public class CommandeFactory {
 
     public Commande createCommand(String name, Document document, String[] parameters) {
         switch (name) {
-            case "ajouter" : return new CommandeAjouter(document, parameters);
-            default: return null;
+            case "ajouter":
+                return new CommandeAjouter(document, parameters);
+            case "remplacer":
+                return new CommandeRemplacer(document, parameters);
+            case "majuscule":
+                return new CommandeMajuscule(document, parameters);
+            default:
+                return null;
         }
     }
 

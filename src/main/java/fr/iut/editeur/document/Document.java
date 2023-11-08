@@ -7,7 +7,7 @@ public class Document {
     public Document() {
         this.texte = "";
     }
-	
+
     public String getTexte() {
         return texte;
     }
@@ -29,5 +29,12 @@ public class Document {
         String leftPart = texte.substring(0, start);
         String rightPart = texte.substring(end);
         texte = leftPart + remplacement + rightPart;
+    }
+
+    public void majuscule(int start, int end) {
+        String leftPart = texte.substring(0, start);
+        String rightPart = texte.substring(end);
+        String toUpper = texte.substring(start, end).toUpperCase();
+        texte = leftPart + toUpper + rightPart;
     }
 }
