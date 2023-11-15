@@ -41,4 +41,8 @@ public class Document {
     public void clear() {
         texte = "";
     }
+
+    public void undo(){
+
+    }
 }
