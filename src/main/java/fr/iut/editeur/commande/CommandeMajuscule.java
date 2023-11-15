@@ -18,5 +18,4 @@ public class CommandeMajuscule extends CommandeDocument{
         this.document.majuscule(start, end);
         super.executer();
     }
-
 }
