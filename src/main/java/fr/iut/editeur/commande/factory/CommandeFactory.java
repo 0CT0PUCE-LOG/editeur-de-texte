@@ -26,6 +26,8 @@ public class CommandeFactory {
                 return new CommandeMajuscule(document, parameters);
             case "inserer":
                 return new CommandeInserer(document, parameters);
+            case "clear":
+                return new CommandeClear(document, parameters);
             default:
                 return null;
         }
